@@ -2,7 +2,7 @@
 
 ## Overview
 
-Implementation of a  **Convolutional Neural Network (CNN)**  from scratch using **NumPy** for the classification of the **Fashion-MNIST** dataset.
+Implementation of a  **Convolutional Neural Network (CNN)**  from scratch for the classification of the **Fashion-MNIST** dataset.
 
 ---
 
@@ -42,7 +42,7 @@ Fashion-MNIST dataset provided by TensorFlow/Keras is used for testing the train
 
 # Train/Test Split Used
 
-Although Fashion-MNIST provides 60,000 training images and 10,000 testing images, a subset of the dataset is used for practical experimentation and faster training as the CNN is implemented manually using NumPy and nested loops instead of optimized GPU frameworks, training on the complete dataset would require significantly higher execution time.
+Although Fashion-MNIST provides 60,000 training images and 10,000 testing images, a subset of the dataset is used for practical experimentation and faster training as the CNN is implemented manually using NumPy and nested loops.
 
 | Dataset | Available | Used |
 |---|---|---|
@@ -56,6 +56,8 @@ Although Fashion-MNIST provides 60,000 training images and 10,000 testing images
 ```text
 UE24CS645BC2_PES1PG25CS086_Fashion_MNIST_CNN/
 │
+├── tf_env
+├── .gitignore
 ├── activations.py
 ├── cnn_layers.py
 ├── cnn.py
@@ -64,6 +66,8 @@ UE24CS645BC2_PES1PG25CS086_Fashion_MNIST_CNN/
 ├── train.py
 ├── README.md
 ├── requirements.txt
+
+
 ```
 
 ---
@@ -90,7 +94,7 @@ Contains implementation of:
 - Fully Connected Layer
 
 Includes:
-- Forward pass
+- Forward pass (Forward Propagation)
 - Backward pass (Backpropagation)
 
 ---
@@ -259,27 +263,36 @@ Predicted: Sneaker
 
 ## Training Output
 
-(Add screenshot here)
+<img width="547" height="541" alt="image" src="https://github.com/user-attachments/assets/3ca2d32c-119f-4adb-907e-d35f47cf9766" />
+<img width="538" height="461" alt="image" src="https://github.com/user-attachments/assets/a925bd67-8c31-424b-bc4f-bbeed572682b" />
+<img width="536" height="487" alt="image" src="https://github.com/user-attachments/assets/b2b06ceb-3fb7-40d8-bd4b-fb2eba708c9c" />
+<img width="544" height="509" alt="image" src="https://github.com/user-attachments/assets/9d882212-849b-494d-9308-3029eb21532a" />
+
+
+
+
 
 ---
 
 ## Loss Curve
 
-(Add screenshot here)
+<img width="880" height="603" alt="image" src="https://github.com/user-attachments/assets/47000ac1-2146-46fb-8bf8-b706129a0449" />
+
 
 ---
 
 ## Accuracy Curve
 
-(Add screenshot here)
+<img width="858" height="621" alt="image" src="https://github.com/user-attachments/assets/a206f883-e5a1-44f9-999a-cd379429720d" />
+
 
 ---
 
 ## Prediction Results
+<img width="547" height="316" alt="image" src="https://github.com/user-attachments/assets/b20784ee-d6f5-4204-bc29-de713b9a9d05" />
+<img width="868" height="553" alt="image" src="https://github.com/user-attachments/assets/adf99821-bd6a-4805-967c-03471d1015c6" />
 
-(Add screenshot here)
 
----
 
 # Technologies Used
 
@@ -315,8 +328,8 @@ python train.py
 | Metric | Value |
 |---|---|
 | Final Test Accuracy | 82.8% |
-| Training Accuracy Progress | 81.96% → 84.54% → 85.94% |
-| Training Loss Progress | 0.5426 → 0.4697 → 0.4270 |
+| Training Accuracy Progress | 70.08% → 81.96% → 84.54% → 85.94% |
+| Training Loss Progress | 0.8612 → 0.5426 → 0.4697 → 0.4270 |
 
 The CNN model successfully learned meaningful image features from the Fashion-MNIST dataset and achieved a final test accuracy of approximately **82.8%** on unseen test data.
 
@@ -337,13 +350,11 @@ The model showed continuous improvement in training accuracy across epochs while
 
 - The final test accuracy of **82.8%** indicates good generalization capability on unseen Fashion-MNIST images.
 
-- The CNN successfully identified important visual patterns such as edges, shapes, and textures required for clothing classification.
+- The CNN successfully identified important visual patterns such as edges, shapes and textures required for clothing classification.
 
-- Some Fashion-MNIST classes with visually similar appearances (such as Shirt, T-shirt/top, and Pullover) are comparatively more challenging to classify accurately.
+- Some Fashion-MNIST classes with visually similar appearances (such as Shirt, T-shirt/top and Pullover) are comparatively more challenging to classify accurately.
 
 - The model achieved stable performance by the final epoch, maintaining a good balance between accuracy improvement and loss reduction.
-
-- Since the CNN was implemented manually using NumPy with explicit convolution and backpropagation operations, the project provided a deeper understanding of the internal working of Convolutional Neural Networks.
 
 ---
 
