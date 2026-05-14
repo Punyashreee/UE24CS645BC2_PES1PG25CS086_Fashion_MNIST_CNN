@@ -15,9 +15,7 @@ CLASS_NAMES = [
 ]
 
 
-# =========================================================
 # PLOT CURVES
-# =========================================================
 
 def plot_curves(losses, accuracies):
 
@@ -52,9 +50,7 @@ def plot_curves(losses, accuracies):
     plt.show()
 
 
-# =========================================================
 # SHOW PREDICTIONS
-# =========================================================
 
 def show_predictions(images, true_labels, pred_labels):
 
