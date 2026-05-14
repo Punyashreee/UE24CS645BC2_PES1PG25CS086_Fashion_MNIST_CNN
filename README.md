@@ -8,7 +8,7 @@ Implementation of a  **Convolutional Neural Network (CNN)**  from scratch for th
 
 # Dataset
 
-Fashion-MNIST dataset provided by TensorFlow/Keras is used for testing the trained CNN model.
+Fashion-MNIST dataset provided by TensorFlow/Keras is used for training and testing.
 
 ## Dataset Details
 
